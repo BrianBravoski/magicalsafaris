@@ -1,1 +1,3 @@
 # magicalsafaris
+
+magicalsafaris.netlify.com
