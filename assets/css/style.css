@@ -255,13 +255,29 @@ border-top: 1px solid #d6d6d6;
     }
 }
 
+/*===
 
+===*/
 
+.hero-image{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ap_rhinos.jpg");
+  color: white;
+  height: 50%;
+  position: relative;
+  background-position: center;
+}
 
+.hero-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
 
-
-
-
+.box{
+  border: #000 5px ;
+  box-shadow: grey;
+}
 
 
 
