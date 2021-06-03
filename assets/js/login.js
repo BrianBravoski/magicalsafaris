@@ -17,9 +17,3 @@ signIn.addEventListener("click", () => {
     }
 })
 
-const leave =document.querySelector("#logout");
-
-leave.addEventListener("click", ()=>{
-    alert("Logged out")
-    window.open("login.html")
-})
