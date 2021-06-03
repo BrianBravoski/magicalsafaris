@@ -13,5 +13,13 @@ signIn.addEventListener("click", () => {
         window.open("home.html");
     } else {
         alert('username or password incorrect')
+        window.open("login.html")
     }
+})
+
+const leave =document.querySelector("#logout");
+
+leave.addEventListener("click", ()=>{
+    alert("Logged out")
+    window.open("login.html")
 })
