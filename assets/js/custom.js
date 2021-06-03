@@ -35,7 +35,7 @@ function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
-       // slides[i].style.display = "none";
+        // slides[i].style.display = "none";
     }
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
@@ -43,7 +43,7 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
-// takes tje 
+// takes the ids and creates it as variables
 
 let username = document.querySelector("#username");
 let email = document.querySelector("#email");
@@ -51,7 +51,7 @@ let password = document.querySelector("#password");
 let finalUser = JSON.parse(localStorage.getItem('users'));
 
 
-
+// the user is able to register to the website
 function addUser(e) {
 
     // checking that all the fields are filled as required
@@ -62,8 +62,9 @@ function addUser(e) {
 
 
     let allUsers = {
+        usernameAll:username.value,
         emailAll: email.value,
-        passwordAll: email.value,
+        passwordAll: password.value,
     }
 
     let indUser = [];
@@ -75,7 +76,11 @@ function addUser(e) {
         indUser.push(allUsers);
         localStorage.setItem('users', JSON.stringify(indUser))
     }
-    console.log(indUser); alert('Registration completed, kindly log in')
-    window.location.href = "login.html"
-    e.preventDefault()
+    console.log(indUser);
+     alert('Registration completed, kindly log in')
+    window.open("login.html")
+    //e.preventDefault()
 };
+
+//login chance
+
