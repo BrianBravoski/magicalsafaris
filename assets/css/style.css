@@ -58,6 +58,9 @@ section {
 font-size: 18px;
 }
 
+.btn-logout{
+  float: right;
+}
 /*===========
 REGISTRATION STYLES
 

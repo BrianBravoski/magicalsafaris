@@ -82,5 +82,12 @@ function addUser(e) {
     //e.preventDefault()
 };
 
-//login chance
+//logout
+const leave =document.querySelector("#logout");
+
+leave.addEventListener("click", ()=>{
+    alert("Logged out")
+    window.open("login.html")
+})
+
 
