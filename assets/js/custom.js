@@ -35,11 +35,11 @@ function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+       // slides[i].style.display = "none";
     }
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
+    //slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000);
 }
 
@@ -76,6 +76,6 @@ function addUser(e) {
         localStorage.setItem('users', JSON.stringify(indUser))
     }
     console.log(indUser); alert('Registration completed, kindly log in')
-    window.location.href = "todologin.html"
+    window.location.href = "login.html"
     e.preventDefault()
 };
